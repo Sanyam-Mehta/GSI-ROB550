@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug debug_python.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/Users/sanyam/Projects/UMich/GSI-ROB550/debug_python.py",
+            "console": "integratedTerminal",
+            "args": []
+        },
+        {
+            "name": "Debug debug_c object file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/Users/sanyam/Projects/UMich/GSI-ROB550/debug_c.o",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "/Users/sanyam/Projects/UMich/GSI-ROB550",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
